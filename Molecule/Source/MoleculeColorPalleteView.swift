@@ -7,7 +7,6 @@
 
 import SwiftUI
 import RoVaAtomicSciFiCore
-import RoVaAtomicSciFiAtom
 
 public struct MoleculeColorPalleteView: AtomView {
     
