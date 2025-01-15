@@ -1,0 +1,15 @@
+{
+  "originHash" : "a30256d67ca783968ce8d576036dad7e5b44845e826c110892f82ae29b176382",
+  "pins" : [
+    {
+      "identity" : "rovalog",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RoVaMx/RoVaLog",
+      "state" : {
+        "branch" : "project/feature/tca_architecture",
+        "revision" : "40784c92222480a5a4a4661168724e774655a55b"
+      }
+    }
+  ],
+  "version" : 3
+}
