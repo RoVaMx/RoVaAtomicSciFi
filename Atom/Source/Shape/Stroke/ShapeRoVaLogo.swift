@@ -8,7 +8,7 @@
 import SwiftUI
 import RoVaAtomicSciFiCore
 
-struct ShapeRoVaLogo : AtomShape {
+public struct ShapeRoVaLogo : AtomShape {
     public func path(in rect: CGRect) -> Path {
         var path = Path()
         let w = rect.maxX / 8
