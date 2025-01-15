@@ -84,4 +84,8 @@ public struct ShapeRoVaLogo : AtomShape {
         
         return path
     }
+    
+    public init() {
+        
+    }
 }
