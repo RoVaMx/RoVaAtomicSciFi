@@ -49,6 +49,16 @@ package extension Path {
                     CGPoint(x: x1, y: y2 - corner))
     }
     
+    mutating func addCross(at c: CGPoint,size s: CGFloat) {
+        let px1 = CGPoint(x: c.x - (s/2) , y: c.y         )
+        let px2 = CGPoint(x: c.x + (s/2) , y: c.y         )
+        let py1 = CGPoint(x: c.x         , y: c.y - (s/2) )
+        let py2 = CGPoint(x: c.x         , y: c.y + (s/2) )
+        self.move(to: px1)
+        self.addLine(to: px2)
+        self.move(to: py1)
+        self.addLine(to: py2)
+    }
 }
 
 // MARK: Arc Stroke
