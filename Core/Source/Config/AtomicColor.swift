@@ -133,6 +133,31 @@ extension AtomicColor {
 
 extension AtomicColor {
     
+    private func background(_ o: CGFloat) -> Color {
+        foreground.opacity(o)
+    }
+    
+    
+    public var backgroundA: Color {
+        background(0.3)
+    }
+    
+    public var backgroundB: Color {
+        background(0.1)
+    }
+    
+    public var backgroundC: Color {
+        background(0.07)
+    }
+    
+    public var backgroundD: Color {
+        background(0.05)
+    }
+    
+}
+
+extension AtomicColor {
+    
     private func neutral(_ level: CGFloat) -> Color {
         addLight(level, to: neutral)
     }
