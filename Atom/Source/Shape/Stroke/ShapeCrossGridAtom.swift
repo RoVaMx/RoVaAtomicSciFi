@@ -8,13 +8,13 @@
 import SwiftUI
 import RoVaAtomicSciFiCore
 
-struct ShapeCrossGridAtom : AtomShape {
+public struct ShapeCrossGridAtom : AtomShape {
     
     var rows : Int
     var columns : Int
     var size: CGFloat
     
-    func path(in rect: CGRect) -> Path {
+    public func path(in rect: CGRect) -> Path {
         var path = Path()
         let w = rect.maxX / CGFloat(columns)
         let h = rect.maxY / CGFloat(rows)
