@@ -8,9 +8,9 @@
 import SwiftUI
 import RoVaAtomicSciFiCore
 
-struct ShapeBottomBarFrameAtom : AtomShape {
+public struct ShapeBottomBarFrameAtom : AtomShape {
     
-    func path(in rect: CGRect) -> Path {
+    public func path(in rect: CGRect) -> Path {
         var path = Path()
         
         let p1 = CGPoint(x: rect.minX, y: rect.minY)
