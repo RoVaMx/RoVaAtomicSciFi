@@ -10,6 +10,10 @@ import RoVaAtomicSciFiCore
 
 public struct ShapeBottomBarFrameAtom : AtomShape {
     
+    init () {
+        
+    }
+    
     public func path(in rect: CGRect) -> Path {
         var path = Path()
         
