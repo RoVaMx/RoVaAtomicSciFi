@@ -11,6 +11,10 @@ import RoVaAtomicSciFiCore
 public struct ShapeTopBarFrameAtom : AtomShape {
     var size : CGFloat
     
+    public init(size: CGFloat) {
+        self.size = size
+    }
+    
     public func path(in rect: CGRect) -> Path {
         var path = Path()
         let x1 = rect.minX
