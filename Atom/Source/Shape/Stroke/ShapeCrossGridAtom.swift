@@ -14,6 +14,12 @@ public struct ShapeCrossGridAtom : AtomShape {
     var columns : Int
     var size: CGFloat
     
+    public init(rows: Int, columns: Int, size: CGFloat) {
+        self.rows = rows
+        self.columns = columns
+        self.size = size
+    }
+    
     public func path(in rect: CGRect) -> Path {
         var path = Path()
         let w = rect.maxX / CGFloat(columns)
