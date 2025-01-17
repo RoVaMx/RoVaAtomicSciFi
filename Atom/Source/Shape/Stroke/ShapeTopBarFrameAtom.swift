@@ -8,10 +8,10 @@
 import SwiftUI
 import RoVaAtomicSciFiCore
 
-struct ShapeTopBarFrameAtom : AtomShape {
+public struct ShapeTopBarFrameAtom : AtomShape {
     var size : CGFloat
     
-    func path(in rect: CGRect) -> Path {
+    public func path(in rect: CGRect) -> Path {
         var path = Path()
         let x1 = rect.minX
         let x2 = rect.minX + size
